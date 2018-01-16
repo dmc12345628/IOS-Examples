@@ -14,9 +14,18 @@
 
 @implementation ViewController
 
+bool isClicked = false;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    CALayer *lyrBtnClickMe = [_btnClickMe layer];
+    [lyrBtnClickMe setMasksToBounds:YES];
+    [lyrBtnClickMe setCornerRadius:5.0f];
+    lyrBtnClickMe.backgroundColor = [[UIColor grayColor]
+                                     CGColor];
+    lyrBtnClickMe.borderWidth = 2.0f;
+    lyrBtnClickMe.borderColor = [[UIColor greenColor] CGColor];
 }
 
 
@@ -26,4 +35,11 @@
 }
 
 
+- (IBAction)clickMe:(id)sender {
+    isClicked = !isClicked;
+    if (isClicked)
+        [_lblWelcome setText:@"Good bye"];
+    else
+        [_lblWelcome setText:@"Welcome"];
+}
 @end

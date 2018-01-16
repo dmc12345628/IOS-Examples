@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *lblWelcome;
+@property (weak, nonatomic) IBOutlet UIButton *btnClickMe;
+- (IBAction)clickMe:(id)sender;
 
 @end
 

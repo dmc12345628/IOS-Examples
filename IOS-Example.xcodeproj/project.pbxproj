@@ -15,6 +15,9 @@
 		23F60810200DEB9800B38ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F6080E200DEB9800B38ECB /* LaunchScreen.storyboard */; };
 		23F6081B200DEB9800B38ECB /* IOS_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F6081A200DEB9800B38ECB /* IOS_ExampleTests.m */; };
 		23F60826200DEB9800B38ECB /* IOS_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F60825200DEB9800B38ECB /* IOS_ExampleUITests.m */; };
+		23F60834200DF76900B38ECB /* ButtonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F60833200DF76900B38ECB /* ButtonsController.m */; };
+		23F608CE200E3CC800B38ECB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 23F608CD200E3CC800B38ECB /* back.png */; };
+		23F608D0200E44AE00B38ECB /* LabelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F608CF200E44AE00B38ECB /* LabelsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		23F60821200DEB9800B38ECB /* IOS-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F60825200DEB9800B38ECB /* IOS_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_ExampleUITests.m; sourceTree = "<group>"; };
 		23F60827200DEB9800B38ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F60833200DF76900B38ECB /* ButtonsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsController.m; sourceTree = "<group>"; };
+		23F60835200DF77700B38ECB /* ButtonsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonsController.h; sourceTree = "<group>"; };
+		23F608CD200E3CC800B38ECB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		23F608CF200E44AE00B38ECB /* LabelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelsController.m; sourceTree = "<group>"; };
+		23F608D1200E44BC00B38ECB /* LabelsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelsController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		23F607FF200DEB9800B38ECB /* IOS-Example */ = {
 			isa = PBXGroup;
 			children = (
+				23F608CD200E3CC800B38ECB /* back.png */,
 				23F60803200DEB9800B38ECB /* AppDelegate.h */,
 				23F60804200DEB9800B38ECB /* AppDelegate.m */,
 				23F60806200DEB9800B38ECB /* ViewController.h */,
@@ -110,6 +119,8 @@
 				23F6080E200DEB9800B38ECB /* LaunchScreen.storyboard */,
 				23F60811200DEB9800B38ECB /* Info.plist */,
 				23F60800200DEB9800B38ECB /* Supporting Files */,
+				23F60836200DF77D00B38ECB /* ButtonsController */,
+				23F608D2200E44C200B38ECB /* LabelsController */,
 			);
 			path = "IOS-Example";
 			sourceTree = "<group>";
@@ -138,6 +149,24 @@
 				23F60827200DEB9800B38ECB /* Info.plist */,
 			);
 			path = "IOS-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		23F60836200DF77D00B38ECB /* ButtonsController */ = {
+			isa = PBXGroup;
+			children = (
+				23F60833200DF76900B38ECB /* ButtonsController.m */,
+				23F60835200DF77700B38ECB /* ButtonsController.h */,
+			);
+			name = ButtonsController;
+			sourceTree = "<group>";
+		};
+		23F608D2200E44C200B38ECB /* LabelsController */ = {
+			isa = PBXGroup;
+			children = (
+				23F608CF200E44AE00B38ECB /* LabelsController.m */,
+				23F608D1200E44BC00B38ECB /* LabelsController.h */,
+			);
+			name = LabelsController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +277,7 @@
 			files = (
 				23F60810200DEB9800B38ECB /* LaunchScreen.storyboard in Resources */,
 				23F6080D200DEB9800B38ECB /* Assets.xcassets in Resources */,
+				23F608CE200E3CC800B38ECB /* back.png in Resources */,
 				23F6080B200DEB9800B38ECB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F608D0200E44AE00B38ECB /* LabelsController.m in Sources */,
 				23F60808200DEB9800B38ECB /* ViewController.m in Sources */,
+				23F60834200DF76900B38ECB /* ButtonsController.m in Sources */,
 				23F60805200DEB9800B38ECB /* AppDelegate.m in Sources */,
 				23F60802200DEB9800B38ECB /* main.m in Sources */,
 			);
